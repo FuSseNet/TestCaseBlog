@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
+using Blog;
 using Microsoft.Extensions.Logging;
 
 class Program
@@ -44,12 +45,12 @@ class Program
         // Petr: 1
 
             
-        // Console.WriteLine(
-        //     JsonSerializer.Serialize(BlogService.NumberOfCommentsPerUser(context)));
-        // Console.WriteLine(
-        //     JsonSerializer.Serialize(BlogService.PostsOrderedByLastCommentDate(context)));
-        // Console.WriteLine(
-        //     JsonSerializer.Serialize(BlogService.NumberOfLastCommentsLeftByUser(context)));
+         Console.WriteLine(
+             JsonSerializer.Serialize(BlogService.NumberOfCommentsPerUser(context)));
+         Console.WriteLine(
+             JsonSerializer.Serialize(BlogService.PostsOrderedByLastCommentDate(context)));
+         Console.WriteLine(
+             JsonSerializer.Serialize(BlogService.NumberOfLastCommentsLeftByUser(context)));
 
     }
 
